@@ -12,7 +12,7 @@ Independientemente de la configuración del box-sizing, el contenido persé cont
 
 ## PADDING
 Es el espaciado interno del elemento y marca la distancia que se encuentra entre el borde y el contenido.
-<!-- ! No puede ser negativo. -->
+No puede ser negativo.
 
 ## BORDER
 Es el borde del elemento y lo que marca el final del mismo.
