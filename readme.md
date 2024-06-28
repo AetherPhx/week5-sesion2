@@ -38,3 +38,39 @@ Su uso principal es para resetear estilos y aplicar el 'box-sizing: border-box'.
 ### Vertical Margin Collapsing
 Al tener dos elementos con margenes verticales, el margen superior de uno de ellos se colapsa con el margen inferior del otro elemento.
 De esta forma solo prevalece el que tiene mayor margen.
+
+# POSITION
+La propiedad position define el comportamiento de la posición de un elemento dentro de su contenedor y cómo interactua con el DOM.
+Al usar esta propiedad se podrá modificar la posición y superposición de un elemento.
+
+## PROPS
+### TOP
+Su valor se agrega a la parte superior del elemento.
+### RIGHT
+Su valor se agrega a la parte derecha del elemento.
+### BOTTOM
+Su valor se agrega a la parte inferior del elemento.
+### LEFT
+Su valor se agrega a la parte izquierda del elemento.
+### Z-INDEX
+Su valor establece el orden de superposición del elemento.
+Se recomienda usar valores de 10 en 10 o de 100 en 100.
+
+## VALUES
+### STATIC
+Este es el valor por defecto y las propiedades de posición no se aplican.
+
+### RELATIVE
+El elemento se posiciona teniendo en cuenta su posición original en el flujo del DOM y aplicando las propiedades de posición.
+Por lo tanto, mantiene sus dimensiones y espacio en el DOM afectando a los demás elementos.
+
+### ABSOLUTE
+El elemento se posiciona sin tener en cuenta su posición original en el flujo del DOM pero manteniendose dentro de su contenedor.
+Por lo tanto, los demás elementos pueden ocupar el espacio que originalmente ocuparia este elemento.
+
+### FIXED
+El elemento se posiciona sin tener en cuenta su posición original en el flujo del DOM ni su contenedor quedandose fijo en la pantalla en la posición establecida aún cuando el usuario haga scroll.
+
+### STICKY
+El elemento se comporta como un elemento relative hasta que se encuentre en la posición indicada en las propiedades top, bottom, left o right.
+Desde ahí, se comporta como fixed permaneciendo fijo en la pantalla.
